@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Characterdetails = () => {
+const Characterdetail = () => {
   return (
     <h1>Characterdetails</h1>
   )
 }
 
-export default Characterdetails
+export default Characterdetail

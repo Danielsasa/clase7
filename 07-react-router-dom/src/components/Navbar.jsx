@@ -1,8 +1,18 @@
-import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className='navbar'>
+      <ul>
+        <li>
+          {/* NavLink agrega la clase 'active' cuando la URL coincide */}
+          <NavLink to='/'>Inicio</NavLink>
+        </li>
+        <li>
+          <NavLink to='/characters'>Personajes</NavLink>
+        </li>
+      </ul>
+    </nav>
   )
 }
 
