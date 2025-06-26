@@ -3,7 +3,7 @@ import Home from '../pages/Home'
 import Characters from '../pages/Characters'
 import CharacterDetail from '../pages/Characterdetail'
 import NotFound from '../pages/NotFound'
-import RequireAuth from '../components/RequireAuth'
+import RequireAuth from '../auth/RequireAuth'
 import Secret from '../pages/Secret'
 
 const AppRoutes = ({ isAuth }) => {
