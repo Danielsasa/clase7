@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "paciente": "Juan Pérez",
+    "fecha": "2025-07-01",
+    "motivo": "Consulta general",
+    "doctor": "Dra. Martínez",
+    "estado": "Confirmada",
+    "notas": "Llevar estudios previos."
+  },
+  {
+    "id": 2,
+    "paciente": "Ana Gómez",
+    "fecha": "2025-07-03",
+    "motivo": "Control anual",
+    "doctor": "Dr. Ramírez",
+    "estado": "Pendiente",
+    "notas": "Ayunar 8 horas antes."
+  },
+  {
+    "id": 3,
+    "paciente": "Luis Torres",
+    "fecha": "2025-07-05",
+    "motivo": "Dolor de cabeza",
+    "doctor": "Dra. López",
+    "estado": "Cancelada",
+    "notas": "Paciente canceló por motivos personales."
+  }
+]

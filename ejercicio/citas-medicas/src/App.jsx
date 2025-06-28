@@ -1,22 +1,21 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home'
-import Citas from './pages/Citas'
-import CitaDetalle from './pages/CitaDetalle'
-import NotFound from './pages/NotFound'
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import AppRoutes from './routes/AppRoutes'
+import { useState } from 'react'
+import citasEjemplo from './data/citas.json'
+import './App.css'
 
 function App () {
+  const [citas, setCitas] = useState(citasEjemplo)
+
+  const agregarCita = (nuevaCita) => {
+    setCitas([...citas, { ...nuevaCita, id: citas.length + 1 }])
+  }
+
   return (
     <BrowserRouter>
-      <nav>
-        <Link to='/'>Inicio</Link>
-        <Link to='/citas'>Ver Citas</Link>
-      </nav>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/citas' element={<Citas />} />
-        <Route path='/cita/:id' element={<CitaDetalle />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <Navbar />
+      <AppRoutes citas={citas} agregarCita={agregarCita} />
     </BrowserRouter>
   )
 }

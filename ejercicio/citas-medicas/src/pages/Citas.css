@@ -1,0 +1,173 @@
+.citas-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.citas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cita-card {
+  background: #f7faff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  padding: 1.5rem 1.2rem;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 6px solid #1976d2;
+  transition: transform 0.15s;
+}
+
+.cita-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(25, 118, 210, 0.15);
+}
+
+.cita-card h3 {
+  margin: 0 0 0.7rem 0;
+  color: #1976d2;
+}
+
+.cita-card p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+}
+
+.detalle-btn {
+  margin-top: 1rem;
+  background: #1976d2;
+  color: #fff;
+  padding: 0.4rem 1.1rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+  align-self: flex-end;
+}
+
+.detalle-btn:hover {
+  background: #125ea2;
+}
+
+.estado {
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+.cita-card.confirmada .estado {
+  background: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #4dd0e1;
+}
+
+.cita-card.pendiente .estado {
+  background: #fffde7;
+  color: #fbc02d;
+  border: 1px solid #ffe082;
+}
+
+.cita-card.cancelada .estado {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+.detalle-cita-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.10);
+  padding: 2rem 1.5rem;
+  text-align: left;
+}
+
+.detalle-cita-card {
+  background: #f7faff;
+  border-radius: 8px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.07);
+}
+
+.detalle-cita-card p {
+  margin: 0.5rem 0;
+  font-size: 1.08rem;
+}
+
+.detalle-btn {
+  background: #1976d2;
+  color: #fff;
+  padding: 0.45rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.detalle-btn:hover {
+  background: #125ea2;
+}
+
+.estado {
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+.estado.confirmada {
+  background: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #4dd0e1;
+}
+
+.estado.pendiente {
+  background: #fffde7;
+  color: #fbc02d;
+  border: 1px solid #ffe082;
+}
+
+.estado.cancelada {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+.citas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.agregar-btn {
+  background: #43a047;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.agregar-btn:hover {
+  background: #2e7031;
+}
