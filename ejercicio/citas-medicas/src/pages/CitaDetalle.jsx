@@ -1,8 +1,12 @@
-import React from 'react'
+import { useParams } from 'react-router-dom'
 
-const CitaDetalle = () => {
+function CitaDetalle () {
+  const { id } = useParams()
   return (
-    <div>CitaDetalle</div>
+    <div>
+      <h2>Detalles de la Cita</h2>
+      <p>ID de la cita: {id}</p>
+    </div>
   )
 }
 
